@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+    header {
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+
+    .sub-menu {
+        display: grid;
+        grid-template-columns: 1fr auto auto ; /* Three columns: logo, search bar, menu */
+        grid-gap: 10px; /* Spacing between grid items */
+        align-items: center;
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 30px;
+        height: auto;
+        margin-right: 5px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc; /* Set border for the entire search bar */
+        border-radius: 20px; /* Set border radius for the entire search bar */
+        padding: 8px; /* Add padding for the entire search bar */ 
+    }
+    
+    .search-bar input[type="text"] {
+        flex: 1; /* Allow input to take up remaining space */
+        border: none; /* Remove border for input */
+        outline: none; /* Remove default input outline */
+        background: transparent; /* Make input background transparent */
+        padding: 0 5px; /* Add padding for input */
+        font-size: 14px;
+    }
+    
+    .search-bar button {
+        border: none; /* Remove border for button */
+        background: transparent; /* Make button background transparent */
+        cursor: pointer;
+    }
+    .search-bar img {
+        width: 20px; /* Adjust icon size */
+        height: auto;
+    }
+
+    .containers {
+        display: flex; 
+        flex-direction: row; /* Stack containers vertically */
+        
+        max-width: 400px; /* Adjust maximum width as needed */
+        margin-left: 20px; /* Adjust left margin as needed */
+    }
+    
+    .container {
+        display: flex;
+        align-items: center; /* Align items vertically */
+        margin-bottom: 20px; /* Add space between containers */
+    }
+    
+    .container img {
+        width: 50px; /* Adjust image width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Add space between image and text */
+    }
+    
+    .container p {
+        margin: 0; /* Remove default margin */
+    }
+
+     
+    .text h1 .highlight {
+        font-size: 14px; /* Adjust the font size as needed */
+        background-color: #dad26c; /* Set the background color */
+        padding: 5px; /* Add padding to the span element */
+       
+    }
+    .text h2 {
+        color: blue; /* Set the text color of h2 to blue */
+        font-size: 28px; /* Adjust the font size as needed */
+
+    }
+    
+    .text h3 {
+        font-size: 60px; /* Adjust the font size as needed */
+        margin-top: 10px;
+        color: rgb(185, 185, 8); /* Set the text color of h3 to yellow */
+    }
+    .imgcontainer {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px; 
+        padding: 10px;
+       }
+    
+    .text {
+        flex: 1; /* Take up remaining space */
+        padding-right: 20px; /* Add space between text and image */
+    }
+    
+    .image {
+        flex-shrink: 0; /* Prevent image from shrinking */
+    }
+    
+    .image img {
+        max-width: 100%; /* Ensure image does not exceed container width */
+    }
+
+    .export-button {
+        float: left; /* Position the button to the left */
+        margin-top: 20px; /* Add space between the imgcontainer and button */
+        margin-left: 40px; 
+    }
+    
+    .export-button button {
+        padding: 10px 20px; /* Add padding to the button */
+        font-size: 16px; /* Adjust font size as needed */
+        background-color: #007bff; /* Button background color */
+        color: white; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 8px; /* Add border radius to button */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+    .export-button button:hover {
+        background-color: #0056b3; /* Change button background color on hover */
+    }
+
+    .container21st {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        align-items: center;
+        max-width: 100%; /* Adjust maximum width as needed */
+        margin: 0 auto; /* Center align the container */
+        margin-top: 10%;
+        padding: 25px;
+        background-color: #d4d378;
+    }
+    
+     
+    
+    .container21st.images {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .container21st p{
+        margin-left: 40px;
+    }
+    
+    .container21st.images img {
+        width: 40%; /* Adjust image width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+/* section 3 */
+.section3{
+    display: flex;
+    margin-left: 10%;
+}
+.bgscetion3{
+    display: flex;
+    
+}
+.section3 .left img{
+border: 1px solid #ccc;
+}
+.section3 .left {
+    position: relative;
+    width: 300px; /* Set container width */
+    height: 200px; /* Set container height */
+}
+
+.section3 .left img {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 1; /* Ensure images are above background */
+}
+
+/* Adjust overlap and position of images */
+.section3 .left img:nth-child(1) {
+    top: 50%;
+    left: -40%;
+    margin: -10% 10% 10% -10%; /* Overlap by 10% */
+}
+
+.section3 .left img:nth-child(2) {
+    top: 40%;
+    right: -5%;
+    margin: -10% -10% 10% 10%; /* Overlap by 10% */
+}
+
+.section3 .left img:nth-child(3) {
+    bottom: -50%;
+    left: 40%;
+    margin: 50% 50% -50% -50%; /* Overlap by 10% */
+}
+/*   left end  */
+.section3 .right {
+    transform: translateX(10%);
+
+}
+.section3 .bgscetion3 .right h1 span{
+    color: #4c41e0;
+}
+.section3 .right img{
+    height: 45px;
+}
+.section3 .right .imagetext {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.section3 .right .imagetext .text{
+    margin-left: 20px;
+    
+}
+.section3 .right .buttonshow{
+    padding: 10px 20px; /* Add padding to the button */
+    font-size: 16px; /* Adjust font size as needed */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 8px; /* Add border radius to button */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+    /*section 5*/
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    .section5 h2{
+        text-align: center;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 700px) {
+    
+    .sub-menu {
+        display: grid;
+        grid-template-rows: auto auto 1fr; /* Three columns: first icon, second icon, search bar */
+        grid-gap: 10px; /* Spacing between grid items */
+        align-items: center;
+        justify-content: center; /* Center content horizontally */
+    }
+
+    .search-bar {
+        grid-column: span 3; /* Make the search bar span all three columns */
+        margin-top: 10px;
+    }
+
+    .search-bar input[type="text"] { 
+        padding: 8px 15px;
+        font-size: 14px;
+        width: calc(100% - 40px); /* Adjust width to accommodate icon button */ 
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    .search-bar button {
+        
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+    }
+    
+    .search-bar button img {
+        width: 20px; /* Adjust icon size */
+        height: auto;
+    }
+
+    .containers {
+        flex-direction: row; /* Revert to side by side layout on larger screens */
+    }
+
+    .container {
+        margin-right: 20px; /* Add space between containers */
+    }
+
+    .section5 {
+        max-width: 700px; /* Adjust max-width for 700px resolution */
+    }
+    .container21st {
+        
+        grid-template-columns: 10% 90%;
+        align-items: center;
+        max-width: 100%; /* Adjust maximum width as needed */
+        margin: 0 auto; /* Center align the container */
+        margin-top: 10%;
+        padding: 25px;
+        background-color: #d4d378;
+    }
+    
+}
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 1200) {
+    .section5 {
+        width: 100%; 
+        margin: 0 auto; /* Center align */
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+}
+
+ 
