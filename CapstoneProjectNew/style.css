@@ -410,15 +410,16 @@ border: 1px solid #ccc;
     .container {
         margin-right: 20px; /* Add space between containers */
     }
+    .section4{
+        margin-top: 300px;
+    }
     .section5{
-        margin-top: -100px;
+        margin-top: 300px;
     }
    
-/*
-    .section5 {
-        max-width: 700px;  
-    }
- */
+ 
+    
+  
 
     /*section 3 */
     .section3{
@@ -501,13 +502,11 @@ border: 1px solid #ccc;
         cursor: pointer; /* Show pointer cursor on hover */
     }
    
-    .section4{
-        margin-top: 300px;
-    }
-    .section5{
-        margin-top: 300px;
-    }
-   
+    /*
+    .section5 {
+        margin-top: 30%; 
+        
+     }*/
      /*.section4 {
         margin-top: 30%; 
         
